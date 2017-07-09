@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_8dp"
+    android:layout_marginRight="@dimen/margin_8dp"
+    android:layout_marginTop="@dimen/margin_8dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_issue_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="@dimen/cv_elevation"
+        card_view:cardCornerRadius="@dimen/card_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_16dp">
+
+            <TextView
+                android:id="@+id/tv_issue_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_22sp"
+                android:textStyle="bold"
+                tools:text="Sample Text" />
+
+            <TextView
+                android:id="@+id/tv_issue_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_issue_title"
+                android:layout_below="@+id/tv_issue_title"
+                android:layout_marginTop="@dimen/padding_16dp"
+                android:ellipsize="end"
+                android:maxLength="140" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
