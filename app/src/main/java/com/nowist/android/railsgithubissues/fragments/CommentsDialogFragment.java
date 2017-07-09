@@ -30,14 +30,13 @@ import retrofit2.Response;
 
 public class CommentsDialogFragment extends DialogFragment {
 
+    public static final String TAG = CommentsDialogFragment.class.getSimpleName();
     private String mCommentsUri;
     private ArrayList<Comment> mDataList;
     private boolean isCommentLoadFailed = false;
     private TextView mCommentsTv;
     private TextView mErrorMessageDisplay;
     private ProgressBar mLoadingIndicator;
-
-    public static final String TAG = CommentsDialogFragment.class.getSimpleName();
     private Call<ArrayList<Comment>> mCall;
 
     public static CommentsDialogFragment newInstance(String uri) {
@@ -111,7 +110,7 @@ public class CommentsDialogFragment extends DialogFragment {
     private void initView(View view) {
         mCommentsTv = (TextView) view.findViewById(R.id.tv_comments);
         mErrorMessageDisplay = (TextView) view.findViewById(R.id.tv_error_message_display);
-        mLoadingIndicator = (ProgressBar) view.findViewById(R.id.pb_loading);
+        mLoadingIndicator = (ProgressBar) view.findViewById(R.id.loading);
 
         loadCommentsData();
     }

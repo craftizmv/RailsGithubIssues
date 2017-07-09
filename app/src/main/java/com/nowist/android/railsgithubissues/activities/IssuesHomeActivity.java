@@ -25,7 +25,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static android.support.v4.app.DialogFragment.STYLE_NORMAL;
 import static android.support.v4.app.DialogFragment.STYLE_NO_TITLE;
 
 public class IssuesHomeActivity extends AppCompatActivity implements IssueAdapter.IssueAdapterOnClickListner {

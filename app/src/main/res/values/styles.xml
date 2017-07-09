@@ -11,6 +11,7 @@
     <style name="Dialog.NoTitle" parent="Theme.AppCompat.Dialog.MinWidth">
         <item name="android:windowNoTitle">true</item>
         <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@color/colorLightGreen</item>
         <item name="android:padding">16dp</item>
     </style>
 
